@@ -1,4 +1,4 @@
-// import { primaries, primaries_names, coin_list } from "./structures.js";
+import { primaries, primaries_names, coin_list } from "./structures.js";
 
 const element_list =["Wisp",
     "Shade",
@@ -31,6 +31,11 @@ const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 [0, 4, 0, 8, 4, 2, 8, 8],
 [1, 1, 4, 4, 9, 8, 3, 3],
 [0, 1, 0, 0, 2, 2, 3, 2]];
+
+
+function generate_button_clicked(){
+    document.getElementById("results").innerHTML = "results generated";
+}
 
 function initialize_instruments(){
     document.getElementById("workshop_selections").innerHTML = "";
@@ -89,6 +94,13 @@ function initialize_instruments(){
     calculate_button.id = "instrument_calculate_button";
     calculate_button.innerHTML = "generate instruments";
     document.getElementById("workshop_selections").appendChild(calculate_button);
+
+    if (calculate_button.addEventListener){
+        calculate_button.addEventListener("click",generate_button_clicked,false);
+    }
+    else if (calculate_button.attachEvent){
+        calculate_button.attachEvent("onclick",generate_button_clicked);
+};
 
 };
 
