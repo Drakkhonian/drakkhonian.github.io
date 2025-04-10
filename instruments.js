@@ -85,6 +85,11 @@ function initialize_instruments(){
         
     };
 
+    var calculate_button = document.createElement("button");
+    calculate_button.id = "instrument_calculate_button";
+    calculate_button.innerHTML = "generate instruments";
+    document.getElementById("workshop_selections").appendChild(calculate_button);
+
 };
 
 var instr_init_button = document.getElementById("instrument_initializer");
