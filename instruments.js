@@ -1,4 +1,4 @@
-import { primaries, primaries_names, coin_list } from "./structures";
+import { primaries, primaries_names, coin_list } from "./structures.js";
 
 const element_list =["Wisp",
     "Shade",
