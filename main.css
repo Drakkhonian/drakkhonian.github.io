@@ -21,7 +21,7 @@
 
 .family_space{
     display: inline-block;
-    height: 120px;
+    height: 130px;
     overflow-y: scroll;
     overflow-x: visible;
 }
