@@ -32,7 +32,6 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
         material_checkbox.id = material_element + "_checkbox";
         material_checkbox.type = 'checkbox';
         material_checkbox.className = "select";
-        material_checkbox.checked = "checked";
         document.getElementById(material_area.id).appendChild(material_checkbox);
         var material_amount = document.createElement('input');
         material_amount.id = material_element + "_amount";
@@ -70,7 +69,6 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
         material_checkbox.id = material_element + "_checkbox";
         material_checkbox.type = 'checkbox';
         material_checkbox.className = "select";
-        material_checkbox.checked = "checked";
         document.getElementById(material_area.id).appendChild(material_checkbox);
         var material_amount = document.createElement('input');
         material_amount.id = material_element + "_amount";

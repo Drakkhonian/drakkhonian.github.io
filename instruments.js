@@ -33,7 +33,23 @@ const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 [0, 1, 0, 0, 2, 2, 3, 2]];
 
 function initialize_instruments(){
-    document.getElementById("workshop_selections").innerHTML = "Instruments Inititalized";
+    document.getElementById("workshop_selections").innerHTML = "";
+    var element_area = document.createElement('div');
+    element_area.id = "instrument_element_selection";
+    element_area.className = "type_space";
+    document.getElementById("workshop_selections").appendChild(element_area);
+    for (let element_index = 0; element_index < element_list.length; element_index++) {
+        const current_element = element_list[element_index];
+        var element_space = document.createElement('div');
+        element_space.id = current_element + "_instrument_area";
+        element_space.className = "family_space";
+        document.getElementById("instrument_element_selection").appendChild(element_space);
+        var element_checkbox = document.createElement('input');
+        element_checkbox.id = current_element + "_intrument_checkbox";
+        element_checkbox.className = "select";
+        document.getElementById(element_space.id).appendChild(element_checkbox);
+        document.getElementById(element_space.id).innerHTML += current_element;
+    }
 };
 
 var instr_init_button = document.getElementById("instrument_initializer");
