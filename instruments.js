@@ -55,9 +55,9 @@ function initialize_instruments(){
         document.getElementById(element_space.id).appendChild(element_checkbox);
 
         document.getElementById(element_space.id).innerHTML += current_element;
-    }
+    };
 
-    var magic_type_area = document.getElementById('div');
+    var magic_type_area = document.createElement('div');
     magic_type_area.id = "instrument_magic_type_selection";
     magic_type_area.className = "family_space";
     document.getElementById("workshop_selections").appendChild(magic_type_area);
@@ -80,9 +80,9 @@ function initialize_instruments(){
 
             document.getElementById(magic_type_space).innerHTML += area_element + " " + target_element;
 
-        }
+        };
         
-    }
+    };
 
 };
 
