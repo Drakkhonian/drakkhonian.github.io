@@ -57,6 +57,33 @@ function initialize_instruments(){
         document.getElementById(element_space.id).innerHTML += current_element;
     }
 
+    var magic_type_area = document.getElementById('div');
+    magic_type_area.id = "instrument_magic_type_selection";
+    magic_type_area.className = "family_space";
+    document.getElementById("workshop_selections").appendChild(magic_type_area);
+
+    for (let area_type_index = 0; area_type_index < area_type.length; area_type_index++) {
+        const area_element = area_type[area_type_index];
+
+        for (let target_type_index = 0; target_type_index < target_type.length; target_type_index++) {
+            const target_element = target_type[target_type_index];
+            
+            var magic_type_space = document.createElement('div');
+            magic_type_space.id = area_element + "_" + target_element + "_instrument_area";
+            magic_type_space.className = "family_boxes";
+            document.getElementById(magic_type_area.id).appendChild(magic_type_space);
+
+            var magic_type_checkbox = document.createElement('div');
+            magic_type_checkbox.id = area_element + "_" + target_element + "_instrument_checkbox";
+            magic_type_checkbox.className = "select";
+            document.getElementById(magic_type_space.id).appendChild(magic_type_checkbox);
+
+            document.getElementById(magic_type_space).innerHTML += area_element + " " + target_element;
+
+        }
+        
+    }
+
 };
 
 var instr_init_button = document.getElementById("instrument_initializer");
