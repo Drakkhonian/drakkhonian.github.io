@@ -1,3 +1,9 @@
+input[type="checkbox"]{
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: greenyellow;
+}
+
 input[type="checkbox"]:checked{
     background: red;
 }
