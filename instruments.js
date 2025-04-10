@@ -78,7 +78,7 @@ function initialize_instruments(){
             magic_type_checkbox.className = "select";
             document.getElementById(magic_type_space.id).appendChild(magic_type_checkbox);
 
-            document.getElementById(magic_type_space).innerHTML += area_element + " " + target_element;
+            document.getElementById(magic_type_space.id).innerHTML += area_element + " " + target_element;
 
         };
         
