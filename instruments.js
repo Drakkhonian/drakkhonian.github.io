@@ -73,8 +73,9 @@ function initialize_instruments(){
             magic_type_space.className = "family_boxes";
             document.getElementById(magic_type_area.id).appendChild(magic_type_space);
 
-            var magic_type_checkbox = document.createElement('div');
+            var magic_type_checkbox = document.createElement('input');
             magic_type_checkbox.id = area_element + "_" + target_element + "_instrument_checkbox";
+            element_checkbox.type = "checkbox";
             magic_type_checkbox.className = "select";
             document.getElementById(magic_type_space.id).appendChild(magic_type_checkbox);
 
