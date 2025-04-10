@@ -50,11 +50,13 @@ function initialize_instruments(){
 
         var element_checkbox = document.createElement('input');
         element_checkbox.id = current_element + "_intrument_checkbox";
+        element_checkbox.type = "checkbox";
         element_checkbox.className = "select";
         document.getElementById(element_space.id).appendChild(element_checkbox);
 
         document.getElementById(element_space.id).innerHTML += current_element;
     }
+
 };
 
 var instr_init_button = document.getElementById("instrument_initializer");

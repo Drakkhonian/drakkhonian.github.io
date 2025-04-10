@@ -1,3 +1,14 @@
+input[type="checkbox"]:checked{
+    background: red;
+}
+
+input[type="checkbox"]:checked:after{
+    content: " ";
+    background: red;
+    top: 0;
+    left: 0;
+}
+
 #workshops{
     max-width: 100%;
     display: inline-table;
