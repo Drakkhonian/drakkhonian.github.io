@@ -35,3 +35,11 @@ const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 function initialize_instruments(){
     document.getElementById("workshop_selections").innerHTML = "Instruments Inititalized"
 };
+
+var instr_init_button = document.getElementById("instrument_initializer");
+if (instr_init_button.addEventListener){
+    instr_init_button.addEventListener("click",initialize_instruments,false)
+}
+else if (instr_init_button.attachEvent){
+    instr_init_button.attachEvent("onclick",initialize_instruments)
+}
