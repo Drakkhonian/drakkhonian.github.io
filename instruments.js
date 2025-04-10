@@ -32,6 +32,6 @@ const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 [1, 1, 4, 4, 9, 8, 3, 3],
 [0, 1, 0, 0, 2, 2, 3, 2]];
 
-function initialize_instruments{
+function initialize_instruments(){
     document.getElementById("workshop_selections").innerHTML = "Instruments Inititalized"
 };
