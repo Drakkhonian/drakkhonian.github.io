@@ -1,0 +1,38 @@
+#workshops{
+    max-width: 100%;
+    display: inline-table;
+}
+
+#inventory{
+    max-width: 100%;
+    display: inline-block;
+}
+
+.title{
+    color: brown;
+}
+
+.type_space{
+    display: inline-block;
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.family_space{
+    display: inline-block;
+    height: 120px;
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+
+.family_boxes{
+    box-sizing: border-box;
+}
+.qnty{
+    width: 45px;
+}
+
+.select{
+    width: 10px;
+}
