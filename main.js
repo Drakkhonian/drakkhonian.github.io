@@ -6,6 +6,8 @@ import { primaries, primaries_names, secondaries, secondaries_names } from "./st
 //metals.id = "metals_boxes2";
 //metals.innerHTML = metal_list;
 
+var family_area =""
+
 for (let family_index = 0; family_index < primaries.length; family_index++) {
     const family_element = primaries[family_index];
     var family_name  = primaries_names[family_index];
