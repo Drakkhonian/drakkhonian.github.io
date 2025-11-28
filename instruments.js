@@ -39,7 +39,7 @@ function generate_button_clicked(){
         const current_element = element_list[element_index];
 
         if (getElementById(current_element + "_intrument_checkbox").checked)
-            document.getElementById("results").innerHTML += current_element;
+            document.getElementById("results").innerHTML = current_element;
     }
 }
 
