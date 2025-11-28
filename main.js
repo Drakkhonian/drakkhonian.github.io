@@ -69,32 +69,32 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
     family_boxes.className = "family_boxes";
     document.getElementById(family_area.id).appendChild(family_boxes);
 
-    for (let material_index = 0; material_index < family_element.length; material_index++) {
-        const material_element = family_element[material_index];
+    // for (let material_index = 0; material_index < family_element.length; material_index++) {
+    //     const material_element = family_element[material_index];
 
-        var material_area = document.createElement('div');
-        material_area.id = material_element + "_id";
-        material_area.className = "family_boxes";
-        document.getElementById(family_boxes.id).appendChild(material_area);
+    //     var material_area = document.createElement('div');
+    //     material_area.id = material_element + "_id";
+    //     material_area.className = "family_boxes";
+    //     document.getElementById(family_boxes.id).appendChild(material_area);
 
-        var material_checkbox = document.createElement('input');
-        material_checkbox.id = material_element + "_checkbox";
-        material_checkbox.checked = true;
-        material_checkbox.type = 'checkbox';
-        material_checkbox.className = "select";
-        document.getElementById(material_area.id).appendChild(material_checkbox);
+    //     var material_checkbox = document.createElement('input');
+    //     material_checkbox.id = material_element + "_checkbox";
+    //     material_checkbox.checked = true;
+    //     material_checkbox.type = 'checkbox';
+    //     material_checkbox.className = "select";
+    //     document.getElementById(material_area.id).appendChild(material_checkbox);
 
-        // var material_amount = document.createElement('input');
-        // material_amount.id = material_element + "_amount";
-        // material_amount.type = 'number';
-        // material_amount.className = "qnty";
-        // material_amount.value = 50;
-        // material_amount.max = 100;
-        // material_amount.min = 0;
-        // document.getElementById(material_area.id).appendChild(material_amount);
+    //     var material_amount = document.createElement('input');
+    //     material_amount.id = material_element + "_amount";
+    //     material_amount.type = 'number';
+    //     material_amount.className = "qnty";
+    //     material_amount.value = 50;
+    //     material_amount.max = 100;
+    //     material_amount.min = 0;
+    //     document.getElementById(material_area.id).appendChild(material_amount);
         
-        material_area.innerHTML += material_element;
-    }
+    //     material_area.innerHTML += material_element;
+    // }
 }
 
 //document.getElementById("inventory").appendChild(metals);
