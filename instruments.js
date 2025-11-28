@@ -34,13 +34,23 @@ const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 
 
 function generate_button_clicked(){
-    document.getElementById("results").innerHTML = "element check 7";
-    for (let element_index = 0; element_index <element_list.length; element_index++){
+    document.getElementById("results").innerHTML = "element check 9";
+    checked_element_list = [];
+
+    for (let element_index = 0; element_index < element_list.length; element_index++){
         const current_element = element_list[element_index];
 
-        if (document.getElementById(current_element + "_intrument_checkbox").checked)
-            document.getElementById("results").innerHTML += current_element;
+        if (document.getElementById(current_element + "_intrument_checkbox").checked) {
+            // document.getElementById("results").innerHTML += current_element;
+            checked_element_list.push(current_element);
+        }
     }
+
+    if (checked_element_list.length == 0){
+        checked_element_list = Array.from(element_list);
+    }
+    document.getElementById("results").innerHTML += checked_element_list;
+
 }
 
 function initialize_instruments(){
