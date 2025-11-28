@@ -34,7 +34,7 @@ const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 
 
 function generate_button_clicked(){
-    document.getElementById("results").innerHTML = "element check 10";
+    document.getElementById("results").innerHTML = "element check 11";
     const checked_element_list = [];
 
     for (let element_index = 0; element_index < element_list.length; element_index++){
@@ -46,7 +46,7 @@ function generate_button_clicked(){
         }
     }
 
-    if (checked_element_list.length == 0){
+    if (checked_element_list.length < 1){
         checked_element_list = Array.from(element_list);
     }
     document.getElementById("results").innerHTML += checked_element_list;
