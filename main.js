@@ -79,7 +79,7 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
 
         var material_checkbox = document.createElement('input');
         material_checkbox.id = material_element + "_checkbox";
-        material_amount.value = true;
+        material_checkbox.checked = true;
         material_checkbox.type = 'checkbox';
         material_checkbox.className = "select";
         document.getElementById(material_area.id).appendChild(material_checkbox);
