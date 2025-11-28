@@ -41,7 +41,7 @@ const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 
 
 function generate_button_clicked(){
-    document.getElementById("results").innerHTML = "empty check 3";
+    document.getElementById("results").innerHTML = "Results";
     const checked_element_list = [];
 
     for (let element_index = 0; element_index < element_list.length; element_index++){
@@ -126,7 +126,7 @@ function initialize_instruments(){
         const current_instrument = instrument_type[instrument_type_index];
 
         var instrument_space = document.createElement('div');
-        instrument_space.id = current_element + "_instrument_area";
+        instrument_space.id = current_instrument + "_instrument_area";
         instrument_space.className = "family_boxes";
         document.getElementById("instrument_instrument_selection").appendChild(instrument_space);
 
