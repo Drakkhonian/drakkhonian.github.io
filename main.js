@@ -79,7 +79,6 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
 
         var material_checkbox = document.createElement('input');
         material_checkbox.id = material_element + "_checkbox";
-        material_checkbox.checked = true;
         material_checkbox.type = 'checkbox';
         material_checkbox.className = "select";
         document.getElementById(material_area.id).appendChild(material_checkbox);
@@ -91,9 +90,9 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
         material_amount.min = 0;
         material_amount.className = "qnty";
         document.getElementById(material_area.id).appendChild(material_amount);
-        document.getElementById(material_amount.id).setAttribute(value,50);
         
         material_area.innerHTML += material_element;
+        document.getElementById(material_checkbox.id).checked = true;
     }
 }
 
