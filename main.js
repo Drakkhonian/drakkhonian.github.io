@@ -91,7 +91,7 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
         material_amount.min = 0;
         material_amount.className = "qnty";
         document.getElementById(material_area.id).appendChild(material_amount);
-        document.getElementById(material_amount.id).value = 50;
+        document.getElementById(material_amount.id).setAttribute(value,50);
         
         material_area.innerHTML += material_element;
     }
