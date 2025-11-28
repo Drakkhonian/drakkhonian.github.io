@@ -84,14 +84,14 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
         material_checkbox.className = "select";
         document.getElementById(material_area.id).appendChild(material_checkbox);
 
-        var material_amount = document.createElement('input');
-        material_amount.id = material_element + "_amount";
-        material_amount.type = 'number';
-        material_amount.className = "qnty";
-        material_amount.value = 50;
-        material_amount.max = 100;
-        material_amount.min = 0;
-        document.getElementById(material_area.id).appendChild(material_amount);
+        // var material_amount = document.createElement('input');
+        // material_amount.id = material_element + "_amount";
+        // material_amount.type = 'number';
+        // material_amount.className = "qnty";
+        // material_amount.value = 50;
+        // material_amount.max = 100;
+        // material_amount.min = 0;
+        // document.getElementById(material_area.id).appendChild(material_amount);
         
         material_area.innerHTML += material_element;
     }
