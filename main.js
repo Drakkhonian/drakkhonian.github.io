@@ -48,7 +48,7 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
 
         material_area.innerHTML += material_element;
 
-        document.getElementById(material_amount.id).setAttribute(value,50);
+        document.getElementById(material_amount.id).value = 50;
     }
 }
 for (let family_index = 0; family_index < primaries.length; family_index++) {
