@@ -47,6 +47,8 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
         document.getElementById(material_area.id).appendChild(material_amount);
 
         material_area.innerHTML += material_element;
+
+        document.getElementById(material_amount.id).setAttribute(value,50);
     }
 }
 for (let family_index = 0; family_index < primaries.length; family_index++) {
@@ -92,7 +94,6 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
         document.getElementById(material_area.id).appendChild(material_amount);
         
         material_area.innerHTML += material_element;
-        document.getElementById(material_checkbox.id).checked = true;
     }
 }
 
