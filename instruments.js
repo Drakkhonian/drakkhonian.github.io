@@ -23,6 +23,13 @@ const target_type =["Fire",
     "Lock"
 ];
 
+const instrument_type =[
+    "Harp",
+    "Marimba",
+    "Flute",
+    "Drum"
+]
+
 const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 [11, 11, 10, 7, 6, 7, 13, 13],
 [10, 10, 4, 4, 7, 12, 6, 12],
@@ -107,6 +114,29 @@ function initialize_instruments(){
             document.getElementById(magic_type_space.id).innerHTML += area_element + " " + target_element;
 
         };
+        
+    };
+
+    var instrument_type_area = document.createElement('div');
+    instrument_type_area.id = "instrument_magic_instrument_selection";
+    instrument_type_area.className = "family_space";
+    document.getElementById("workshop_selections").appendChild(instrument_type_area);
+
+    for (let instrument_type_index = 0; instrument_type_index < instrument_type.length; instrument_type_index++) {
+        const current_instrument = instrument_type[instrument_type_index];
+
+        var instrument_space = document.createElement('div');
+        instrument_space.id = current_element + "_instrument_area";
+        instrument_space.className = "family_boxes";
+        document.getElementById("instrument_instrument_selection").appendChild(instrument_space);
+
+        var instrument_checkbox = document.createElement('input');
+        instrument_checkbox.id = current_element + "_intrument_checkbox";
+        instrument_checkbox.type = "checkbox";
+        instrument_checkbox.className = "select";
+        document.getElementById(instrument_space.id).appendChild(instrument_checkbox);
+
+        document.getElementById(instrument_space.id).innerHTML += current_instrument;
         
     };
 
