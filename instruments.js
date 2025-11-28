@@ -128,7 +128,7 @@ function initialize_instruments(){
         var instrument_space = document.createElement('div');
         instrument_space.id = current_instrument + "_instrument_area";
         instrument_space.className = "family_boxes";
-        document.getElementById("instrument_instrument_selection").appendChild(instrument_space);
+        document.getElementById("instrument_magic_instrument_selection").appendChild(instrument_space);
 
         var instrument_checkbox = document.createElement('input');
         instrument_checkbox.id = current_element + "_intrument_checkbox";
