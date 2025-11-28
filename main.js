@@ -40,7 +40,6 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
         var material_amount = document.createElement('input');
         material_amount.id = material_element + "_amount";
         material_amount.type = 'number';
-        material_amount.value = 0;
         material_amount.max = 100;
         material_amount.min = 0;
         material_amount.className = "qnty";
@@ -48,7 +47,7 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
 
         material_area.innerHTML += material_element;
 
-        document.getElementById(material_amount.id).value = 50;
+        document.getElementById(material_element + "_amount").setAttribute('value','50');
     }
 }
 for (let family_index = 0; family_index < primaries.length; family_index++) {
