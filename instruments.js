@@ -34,11 +34,11 @@ const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 
 
 function generate_button_clicked(){
-    document.getElementById("results").innerHTML = "element check 4";
+    document.getElementById("results").innerHTML = "element check 5";
     for (let element_index = 0; element_index <element_list.length; element_index++){
         const current_element = element_list[element_index];
 
-        if (getElementById(current_element + "_intrument_checkbox").value == true)
+        if (document.etElementById(current_element + "_intrument_checkbox").checked)
             document.getElementById("results").innerHTML = current_element;
     }
 }
