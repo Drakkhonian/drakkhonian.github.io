@@ -324,7 +324,7 @@ export const instrument_type =[
     "Drum"
 ]
 
-const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
+export const attack_shape_map = [[10, 11, 10, 10, 6, 12, 13, 12],
 [11, 11, 10, 7, 6, 7, 13, 13],
 [10, 10, 4, 4, 7, 12, 6, 12],
 [10, 4, 10, 6, 4, 6, 8, 12],
