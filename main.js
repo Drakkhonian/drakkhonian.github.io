@@ -50,7 +50,7 @@ for (let family_index = 0; family_index < primaries.length; family_index++) {
         document.getElementById(material_element + "_amount").setAttribute('value','0');
     }
 }
-for (let family_index = 0; family_index < primaries.length; family_index++) {
+for (let family_index = 0; family_index < secondaries.length; family_index++) {
     const family_element = secondaries[family_index];
 
     var family_name  = secondaries_names[family_index]
