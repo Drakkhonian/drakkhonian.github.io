@@ -131,7 +131,7 @@ function initialize_instruments(){
         document.getElementById("instrument_magic_instrument_selection").appendChild(instrument_space);
 
         var instrument_checkbox = document.createElement('input');
-        instrument_checkbox.id = current_element + "_intrument_checkbox";
+        instrument_checkbox.id = current_instrument + "_intrument_checkbox";
         instrument_checkbox.type = "checkbox";
         instrument_checkbox.className = "select";
         document.getElementById(instrument_space.id).appendChild(instrument_checkbox);
